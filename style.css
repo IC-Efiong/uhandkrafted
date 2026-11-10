@@ -1,0 +1,90 @@
+:root{--bg:#fffaf1;--fg:#2b1b4a;--muted:#6b5d82;--card:#fff;--line:#f1e3cf;--a:#7b3ff2;--b:#ff4f9a;--lav:#e9dcff;--yel:#ffe27a;--gry:#f3efe8;--teal:#19c3b1;--org:#ff8a3d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1233;--fg:#fbf5ff;--muted:#bbaed4;--card:#27194a;--line:#3d2b66;--a:#b794ff;--b:#ff7ab5;--lav:#4a3585;--yel:#ffd84d;--gry:#2f2250;--teal:#3ddbc8;--org:#ffa05c}}
+:root[data-theme="dark"]{--bg:#1b1233;--fg:#fbf5ff;--muted:#bbaed4;--card:#27194a;--line:#3d2b66;--a:#b794ff;--b:#ff7ab5;--lav:#4a3585;--yel:#ffd84d;--gry:#2f2250;--teal:#3ddbc8;--org:#ffa05c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 'Nunito','Trebuchet MS',Arial,sans-serif}
+h1,h2,.logo{font-family:'Fredoka','Trebuchet MS',sans-serif;font-weight:600}
+h3,nav,.btn,label,button{font-family:'Fredoka','Trebuchet MS',sans-serif;font-weight:500}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-size:20px;letter-spacing:.45em;text-transform:uppercase}
+nav a{margin-left:16px;text-decoration:none;font-size:14px;color:var(--muted)}
+.hero{padding:56px 0 40px;display:grid;gap:28px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 14px}
+.hero p{color:var(--muted);font-size:18px;margin:0 0 22px}
+.art{border-radius:28px;background:#fff;overflow:hidden;border:1px solid var(--line)}
+.art img{display:block;width:100%;height:auto}
+body:before{content:'';position:absolute;inset:0 0 auto 0;height:520px;background:radial-gradient(60% 80% at 85% 10%,var(--lav),transparent 70%),radial-gradient(40% 50% at 10% 30%,var(--yel),transparent 70%);opacity:.55;z-index:-1}
+.hero,section{position:relative}
+.btn{display:inline-block;background:var(--a);color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none;border:0;font-size:15px;cursor:pointer}
+.btn.alt{background:transparent;color:var(--fg);border:1px solid var(--fg);margin-left:8px}
+section{padding:44px 0}
+h2{font-size:30px;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.card .img{aspect-ratio:3/4;background-size:cover;background-position:center top}
+.mark{width:38px;height:38px;border-radius:50%;border:1px solid var(--line)}
+.card .body{padding:14px}
+.card h3{margin:0 0 4px;font-size:17px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:14px}
+.tag{font-size:12px;padding:3px 9px;border-radius:99px;background:var(--line)}
+.card button{width:100%;margin-top:10px;background:none;border:1px solid var(--a);color:var(--a);padding:8px;border-radius:10px;cursor:pointer}
+.steps{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps div{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.steps b{font:500 34px Georgia,serif;color:var(--a)}
+form{display:grid;gap:12px;max-width:520px}
+label{font-size:14px;display:grid;gap:4px}
+input,select,textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
+.strip{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font:12px 'Trebuchet MS',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.info{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.info div{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.info h3{margin:0 0 6px}.info p{margin:0;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 0;max-width:720px}
+summary{cursor:pointer;font:600 16px 'Trebuchet MS',sans-serif}
+details p{color:var(--muted);margin:8px 0 0}
+.card{transition:transform .2s}.card:hover{transform:translateY(-3px)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#073b1a;padding:12px 18px;border-radius:999px;font:600 14px 'Trebuchet MS',sans-serif;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2);z-index:6}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+@media(max-width:700px){.hero{grid-template-columns:1fr}nav a:nth-child(n+3){display:none}}
+
+/* fun & friendly layer */
+.logo{font-size:23px;letter-spacing:.02em;text-transform:none;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a{color:var(--fg);font-weight:500;font-size:15px}nav a:hover{color:var(--b)}
+header{background:var(--bg);border-bottom:3px solid var(--yel)}
+body:before{height:620px;background:radial-gradient(45% 55% at 90% 8%,var(--lav),transparent 70%),radial-gradient(35% 45% at 5% 25%,var(--yel),transparent 70%),radial-gradient(30% 40% at 60% 0%,rgba(255,79,154,.22),transparent 70%);opacity:.8}
+.pill{display:inline-block;background:var(--yel);color:#2b1b4a;font:600 14px 'Fredoka',sans-serif;padding:6px 14px;border-radius:999px;margin-bottom:14px;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(36px,7vw,60px);line-height:1.05}
+.hl{background:linear-gradient(transparent 58%,var(--yel) 58% 92%,transparent 92%);padding:0 4px}
+.hero p{font-size:19px}
+.btn{background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 6px 0 rgba(43,27,74,.18);transition:transform .15s,box-shadow .15s;font-size:16px;padding:13px 26px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 rgba(43,27,74,.18)}
+.btn.alt{background:var(--card);color:var(--fg);border:2px solid var(--a);box-shadow:none}
+.art{position:relative;overflow:visible;transform:rotate(2deg);border:5px solid #fff;border-radius:30px;box-shadow:14px 14px 0 var(--yel),0 18px 40px rgba(123,63,242,.25);background:#fff}
+.art>img:first-child{border-radius:24px}
+.sticker{position:absolute;left:-22px;bottom:-26px;width:112px;height:112px;border-radius:26px;border:4px solid #fff;box-shadow:0 8px 20px rgba(43,27,74,.25);transform:rotate(-8deg);background:#fff}
+.strip{background:linear-gradient(90deg,var(--a),var(--b),var(--org));color:#fff;border:0;border-radius:999px;margin:22px 0;padding:12px 20px;font:500 14px 'Fredoka',sans-serif;letter-spacing:.06em}
+.strip span:before{content:"\2726  "}
+h2{font-size:clamp(28px,5vw,38px)}
+h2:after{content:"";display:block;width:64px;height:7px;border-radius:7px;background:linear-gradient(90deg,var(--b),var(--yel));margin-top:8px}
+.card{border:2px solid var(--line);border-radius:26px;box-shadow:0 8px 0 var(--line)}
+.card:hover{transform:translateY(-4px) rotate(-.6deg)}
+.card .img{border-radius:0}
+.tag{font-family:'Fredoka',sans-serif;color:#2b1b4a;background:var(--yel)}
+.card:nth-child(4n+2) .tag{background:#ffc2dd}.card:nth-child(4n+3) .tag{background:#a8f0e6}.card:nth-child(4n+4) .tag{background:#ffd3b0}
+.card button{border-radius:999px;border:2px solid var(--a);font-weight:500;transition:background .15s,color .15s}
+.card button:hover:not(:disabled){background:var(--a);color:#fff}
+.steps div,.info div{border:2px solid transparent;border-radius:26px}
+.steps div:nth-child(1),.info div:nth-child(1){background:rgba(255,79,154,.13)}
+.steps div:nth-child(2),.info div:nth-child(2){background:rgba(25,195,177,.15)}
+.steps div:nth-child(3),.info div:nth-child(3){background:rgba(255,200,40,.22)}
+.steps b{font:600 22px 'Fredoka',sans-serif;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--a);color:#fff}
+input,select,textarea{border:2px solid var(--line);border-radius:14px}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--lav);border-color:var(--a)}
+details{border:2px solid var(--line);border-radius:18px;padding:14px 18px;margin-bottom:10px;background:var(--card)}
+summary{font-family:'Fredoka',sans-serif}
+footer{background:var(--lav);border-top:0;margin-top:30px;color:var(--fg)}
+@media(max-width:700px){.sticker{width:84px;height:84px;left:-8px}.art{box-shadow:8px 8px 0 var(--yel)}}

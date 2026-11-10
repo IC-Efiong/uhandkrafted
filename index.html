@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Handcrafted — Hand Tie-Dyed, Hand-Illustrated Dresses</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/mark.png">
+</head>
+<body>
+<!-- OWNER SETTINGS: edit the values in CONFIG below, and the dresses in DRESSES -->
+<header><div class="wrap"><div style="display:flex;align-items:center;gap:12px"><img class="mark" alt="" src="images/mark.png"><div class="logo" id="brand"></div></div>
+<nav><a href="#shop">Shop</a><a href="#order">Order</a><a href="#info">Care &amp; delivery</a><a href="#faq">FAQ</a></nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<span class="pill">New &middot; one-of-a-kind pieces</span>
+<h1>Wearable art, <span class="hl">dyed &amp; drawn</span> by hand!</h1>
+<p>Welcome! Every piece starts as a splash of tie-dye, then gets its very own hand-drawn artwork. No two are ever the same.</p>
+<a class="btn" href="#shop">Shop the collection</a><a class="btn alt" href="#order">Custom order</a>
+</div>
+<div class="art"><img alt="Hand-painted tie-dye hooded kaftan" src="images/purple.jpg"><img class="sticker" alt="Handcrafted logo" src="images/logo.png"></div>
+</div>
+
+<div class="strip"><span>Hand tie-dyed</span><span>Hand-drawn art</span><span>One of a kind</span><span>Made to measure</span></div>
+<section id="shop"><h2>The Collection</h2><p class="sub">Dresses, kaftans and jackets. Each piece is one of a kind.</p>
+<div class="grid" id="grid"></div></section>
+
+<section id="process"><h2>How it's made</h2><p class="sub">Slow, careful, and entirely by hand.</p>
+<div class="steps">
+<div><b>1</b><h3>Fold &amp; dye</h3><p>Each dress is folded, tied and dyed in a unique colour story.</p></div>
+<div><b>2</b><h3>Set &amp; cure</h3><p>The colours are rinsed and cured so they stay vivid wash after wash.</p></div>
+<div><b>3</b><h3>Draw</h3><p>Original artwork is drawn straight onto the fabric, making each piece truly unique.</p></div>
+</div></section>
+
+<section id="info"><h2>Sizing, care &amp; delivery</h2><p class="sub">Everything to know before you order.</p>
+<div class="info">
+<div><h3>Sizing</h3><p>Pieces are made to fit you. Send your bust, waist, hips and preferred length, or your usual size, and we'll confirm the best fit before we start.</p></div>
+<div><h3>Care</h3><p>Hand wash cold with mild soap, separately for the first few washes. Dry in the shade, iron inside out on low heat, and avoid bleach or scrubbing the drawn artwork.</p></div>
+<div><h3>Delivery &amp; returns</h3><p>Delivery time and fees are confirmed when you order. Each piece is one of a kind, so returns are accepted only for faults. Message us within 48 hours if anything is wrong.</p></div>
+</div></section>
+
+<section id="faq"><h2>Questions</h2><p class="sub">Quick answers.</p>
+<details><summary>How long does an order take?</summary><p>Each dress is dyed, cured and drawn by hand, so we'll confirm a timeline when you order.</p></details>
+<details><summary>Will mine look exactly like the photo?</summary><p>Every tie-dye pattern and drawing is unique, so yours will be similar in spirit but never identical.</p></details>
+<details><summary>Can I choose colours or artwork?</summary><p>Yes. Use the form below to request a custom piece and describe your ideas.</p></details>
+<details><summary>Is the artwork permanent?</summary><p>The artwork is made to last with gentle care. Follow the care instructions above to keep it looking its best.</p></details>
+<details><summary>How do I pay?</summary><p>We'll send an invoice with bank details once your order is confirmed, and a receipt when you've paid.</p></details>
+</section>
+
+<section id="order"><h2>Order or request a custom piece</h2><p class="sub">Send us your details and we'll reply to confirm size, price and delivery.</p>
+<form id="f">
+<label>Your name<input id="n" required></label>
+<label>I'm interested in<select id="p"></select></label>
+<label>Size / measurements<input id="s" placeholder="e.g. UK 12, or bust/waist/hips"></label>
+<label>Colours or art ideas (for custom)<textarea id="m" rows="3"></textarea></label>
+<button class="btn" type="submit">Send order request via WhatsApp</button>
+</form></section>
+</main>
+
+<a class="wa" id="wa" target="_blank" rel="noopener">Chat on WhatsApp</a>
+<footer><div class="wrap"><span id="foot"></span><br>Made with love, lots of dye &amp; a little glitter 💜</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
